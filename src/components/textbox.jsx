@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Textbox = ({ text, setText }) => {
+const Textbox = ({ text, setText, handleTextTranslation }) => {
     const handleChange = (e) => {
         setText(e.target.value);
     }
     const handleSubmit = (e) => {
         e.preventDefault();
+        handleTextTranslation();
         console.log(text);
     }
 
