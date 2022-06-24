@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Textbox from './components/textbox';
 
 import './App.css';
+import Yoda from './components/yoda';
 import axios from 'axios';
 
 const App = () => {
@@ -23,12 +24,14 @@ const App = () => {
       const response = await axios
         .get(`https://api.funtranslations.com/translate/yoda.json`, { params: { text: text } });
       setTranslatedText(response.data.contents.translated);
+      console.log(response.data)
     })();
   }
 
   return (
     <div>
       <Textbox text={text} setText={setText} handleTextTranslation={handleTextTranslation} />
+      <Yoda translatedText={translatedText}/>
     </div>
   );
 }
