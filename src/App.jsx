@@ -31,14 +31,14 @@ const App = () => {
   }
 
   return (
-    <div className='body'>  
-     <h1 className='title'>Yoda Translator</h1>
-      <div className='display'> 
+    <div className='body'>
+      <h1 className='title'>Yoda Translator</h1>
+      <div className='display'>
         <Textbox text={text} setText={setText} handleTextTranslation={handleTextTranslation} />
-        <Yoda translatedText={translatedText}/>
+        <Yoda translatedText={translatedText} />
       </div>
 
-      
+
     </div>
   );
 }
