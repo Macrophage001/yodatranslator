@@ -6,7 +6,7 @@
    margin: auto; 
    width: 50%;
    padding: 10px;
-   color: greenyellow;
+   color: rgb(138, 215, 21);
    /* background: #232323; */
    /* text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px ##398304, 0 0 30px ##398304, 0 0 40px ##398304, 0 0 55px ##398304, 0 0 75px ##398304; */
    text-shadow: 5px 5px 10px green;
@@ -24,11 +24,26 @@
 #textbox{
     -webkit-box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0); 
     box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0);
-    background-color: rgba(172, 158, 158, 0.562);
+    /* background-color: rgba(172, 158, 158, 0.562); */
+    background-color: rgba(6, 168, 6, 0.747);
+    
     color: white;
     padding: 1rem;
-
+    transition-duration: 0.5s ;
    
+}
+
+#textbox:hover {
+    /* cursor: pointer; */
+    /* margin-left: 10px; */
+    /* background-color: rgba(91, 238, 91, 0.598);
+     */
+         background-color: rgba(172, 158, 158, 0.562);
+    border-radius: 20px  20px  0  20px;
+    font-weight: bold;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0); 
+    box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0);
+    
 }
 
 .submit {
@@ -36,15 +51,23 @@
     margin-left: 10px;
     border-radius: 40px;
     background-color: rgba(6, 168, 6, 0.747);
-    transition: 0.5s ease;
+    transition-duration: 0.5s ;
+    font-weight: bold;
 }
 
 .submit:hover {
     cursor: pointer;
     margin-left: 10px;
     background-color: rgb(0, 230, 0);
+    /* border-radius: 10px; */
     font-weight: bold;
     -webkit-box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0); 
     box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0);
 
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(220, 213, 213);
+    opacity: 1; /* Firefox */
+  }
+  

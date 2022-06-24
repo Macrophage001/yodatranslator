@@ -14,7 +14,7 @@ const Textbox = ({ text, setText, handleTextTranslation }) => {
     return (
         <div>
             <form onSubmit={handleSubmit} className='box'>
-                <textarea name="Textbox" id="textbox" cols="30" rows="10" value={text} onChange={handleChange}></textarea>
+                <textarea name="Textbox" id="textbox" cols="30" rows="10" value={text} onChange={handleChange} placeholder='Write text here...'></textarea>
                 <br />
 
                 <input type="submit" value="Submit" className='submit' />
