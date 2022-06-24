@@ -1,0 +1,24 @@
+.response{
+    border:solid 5px rgba(0, 128, 0, 0.883);
+    position: absolute;
+    left: 150px;
+    bottom:170px;
+    margin: 10px;
+    padding: 20px;
+    width: 80%;
+    height: 150px;
+    border-radius: 40px 40px 40px 0px;
+    -webkit-box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0); 
+    box-shadow: inset -1px 3px 8px 5px #398304, 2px 5px 16px 0px #398304, 5px 5px 15px 5px rgba(70,142,23,0);
+
+}
+
+
+.bodyYoda {
+    display: flex;
+    /* margin-left: 50px; */
+    color: white;
+   position: relative;
+}
+
+

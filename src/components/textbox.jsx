@@ -1,4 +1,5 @@
 import React from 'react'
+import text from '../style/textbox.css'
 
 const Textbox = ({ text, setText, handleTextTranslation }) => {
     const handleChange = (e) => {
@@ -12,9 +13,14 @@ const Textbox = ({ text, setText, handleTextTranslation }) => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit}>
+                  
+                 
+
+            <form onSubmit={handleSubmit} className='box'>
                 <textarea name="Textbox" id="textbox" cols="30" rows="10" value={text} onChange={handleChange}></textarea>
-                <input type="submit" value="Submit" />
+                <br/>
+              
+                <input type="submit" value="Submit" className='submit'/>
             </form>
         </div>
     )

@@ -5,6 +5,8 @@ import './App.css';
 import Yoda from './components/yoda';
 import axios from 'axios';
 
+
+
 const App = () => {
   const [text, setText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
@@ -29,9 +31,14 @@ const App = () => {
   }
 
   return (
-    <div>
-      <Textbox text={text} setText={setText} handleTextTranslation={handleTextTranslation} />
-      <Yoda translatedText={translatedText}/>
+    <div className='body'>  
+     <h1 className='title'>Yoda Translator</h1>
+      <div className='display'> 
+        <Textbox text={text} setText={setText} handleTextTranslation={handleTextTranslation} />
+        <Yoda translatedText={translatedText}/>
+      </div>
+
+      
     </div>
   );
 }
