@@ -26,7 +26,6 @@ const App = () => {
       const response = await axios
         .get(`https://api.funtranslations.com/translate/yoda.json`, { params: { text: text } });
       setTranslatedText(response.data.contents.translated);
-      console.log(response.data)
     })();
   }
 

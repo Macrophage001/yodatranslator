@@ -2,7 +2,6 @@ import React from 'react'
 import '../style/yoda.css';
 
 const Yoda = (props) => {
-    console.log(props)
     return (
         <div className='bodyYoda'>
             <img src='/img/yoda.png'></img>
