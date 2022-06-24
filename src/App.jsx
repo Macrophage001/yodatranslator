@@ -7,7 +7,7 @@ const App = () => {
   const [translatedText, setTranslatedText] = useState("");
 
   return (
-    <div className="App">
+    <div>
       <Textbox text={text} setText={setText} />
     </div>
   );
